@@ -1,13 +1,15 @@
 ```mermaid
 sequenceDiagram
+
+
     participant browser
     participant server
 
-    Note above browser: user clicks save
+    Note right of browser: user clicks save
     browser->>server: HTTP POST request to /exampleapp/new_note
     activate server
     
-    Note above server: server saves the data to an array
+    Note left of server: server saves the sent data
     server-->>browser: HTTP status code 302 (URL redirect to /notes)
     deactivate server
 
