@@ -67,9 +67,9 @@ const App = () => {
       <Header course={course} />
 
       <Content
-       part1Name={part1.name}
-       part2Name={part2.name}
-       part3Name={part3.name}
+       part1={part1.name}
+       part2={part2.name}
+       part3={part3.name}
 
        exercises1={part1.exercises}
        exercises2={part2.exercises} 
