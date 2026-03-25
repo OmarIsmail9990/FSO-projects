@@ -12,7 +12,14 @@ const StatisticLine = (props) => {
 
      return (
         <div>
-          <p>{text} {value}</p>
+          <table>
+           <tbody>
+            <tr>
+              <td width={80}>{text}</td>
+              <td width={30}>{value}</td>
+            </tr>
+           </tbody>
+          </table>
         </div>
       )
   
